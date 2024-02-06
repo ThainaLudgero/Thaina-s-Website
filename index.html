@@ -1,0 +1,208 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thaina's website!!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="flickity.css" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row row1">
+                <div class="box box-row1">
+                    <div class="box1">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/titulo.png" alt="titulo"></a>
+                        </div>
+                        <div class="links">
+                            <a href="#">About me page</a>
+                            <a href="#">My Guestbook!</a>
+                            <a href="blog.html">Personal Blog</a>
+                            <a href="#">Photo Gallery</a>
+                            <a href="#">Museum/Shrine</a>
+                            <a href="#">Credits here!</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 2 -->
+            <div class="row row2">
+                <div class="box box-row2">
+                    <div class="box2">
+                        <p>Thaina is <span style="color: #c194ffff;">feeling</span>:&nbsp;</p>
+                        <a href="https://www.imood.com/users/thaml"><img src="https://moods.imood.com/display/uname-thaml/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of thaina at www.imood.com" border="0"></a>
+                    </div>
+                    <div class="box3">
+                        <p>You are <span style="color: #c194ffff;">visitor</span> #<span id="hitcount"></span></p>
+                    </div>
+                    <script>
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                            var site_data = JSON.parse(this.responseText);
+                            var num_arr = site_data.info.views.toString().split("");
+                            var num_str = "";
+                            for (i = 0; i < num_arr.length; i++) {
+                                num_str += num_arr[i];
+                                if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+                            }
+                            document.getElementById("hitcount").innerHTML = num_str;
+                            }
+                        };
+                        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=thainaswebsite", true);
+                        xhttp.send();
+                    </script>
+                    <div class="box4">
+                        <img src="blinkies/shoujo1.png" alt="anime girl">
+                    </div>
+                    <div class="box5">
+                        <img src="blinkies/shoujo2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 3 -->
+            <div class="row row3">
+                <div class="box box-row3">
+                    <div class="box6">
+                        <img src="assets/imagem1.jpg" style="float: left;height: 150px;width: 150px;padding: 20px;" alt="tomoko kawase">
+                        <div id="pwrap" style="padding-top: 20px;text-indent: 0.5em;">
+                            <p><span class="decoração" style="color: #c194ffff;">Olá querido internauta, Bem-vindo ao meu website!</span></p>
+                            <p>Meu nome é Thainá e sou só mais uma moça latina americana surfando pela web XD</p>
+                            <p>Sou Brasileira - mas não sei jogar futebol, aviso já de antemão - e mais uma boba romântica apaixonada por livros, música, design e anime.</p>
+                            <p>Sou cristã e assim como qualquer um - Eu espero (emoji) - e à todos, eu dou meu <span class="decoração"  style="color: #c194ffff;">respeito!</span></p>
+                            <p>O propósito deste site é resgatar as memórias nostálgicas da antiga web e claro, treinar minhas habilidades em desenvolvimento web (emoji).</p>
+                            <p><span class="decoração" style="color: #c194ffff;">Espero que tenha gostado! Até mais!</span></p>
+                        </div>
+                        <div id="imgwrap" style="text-align: center;">
+                            <img src="blinkies/chinese7.gif" alt="button">
+                            <img src="blinkies/chinese8.gif" alt="button">
+                            <img src="blinkies/chinese9.jpg" alt="button">
+                        </div>
+                    </div>
+                    <div class="box7">
+                        <img src="blinkies/happyday.gif" alt="">
+                    </div>
+                    <div class="box8">
+                        <!--START OF SELF INSERT WEBRING-->
+                        <div id="selfinsertwebring">
+                            <script src="showWebring.js"></script>
+                        </div>
+                        <!--END OF SELF INSERT WEBRING-->
+                   </div>
+                </div>
+            </div>
+            <!-- ROW 4 -->
+            <div class="row row4">
+                <div class="box box-row4">
+                    <div class="box10">
+                        <a href="https://tamanotchi.world/10060c"><img src="https://tamanotchi.world/i2/10060" alt="It's tamaNOTchi! Click to feed!"></a>
+                    </div>
+                    <div class="box11">
+                        <img src="blinkies/butterflies.gif" alt="">
+                    </div>
+                    <div class="box12">
+                        <img src="blinkies/animegirl2.gif" alt="">
+                    </div>
+                    <div class="box13">
+                        <div class="main-carousel popup" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": ">1", "freeScroll": "true", "wrapAround": "true"}'>
+                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 5 -->
+            <div class="row row5">
+                <div class="box box-row5">
+                    <div class="box14">
+                        <div id="topo">
+                            <a href="blog.html"><span><img src="assets/icon1.gif" alt=""></span><h1 style="color:#ff3281;">Blog!</h1></a>
+                            <p style="text-align: center;padding-bottom: 10px;">Here i talk about my interests and everything else that i would like to keep on my website!</p>
+                        </div>
+                        <div id="preview" onmouseover="popUp()" onmouseout="popUpReset()">
+                            <h1 id="titulo" style="color:#ff3281;">Post Template</h1>
+                            <h4 id="data" style="color:#ff698fff;">10 Nov, 2020</h4>
+                            <p style="text-align: justify;padding: 10px;">
+                                <span id="texto100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iusto quae.</span>
+                                <span id="texto50" style="color: rgba(248, 248, 248, 0.800);;">Quos consequatur laboriosam ratione amet reprehenderit sint eveniet,</span>
+                                <span id="texto10" style="color: rgba(248, 248, 248, 0.507);">
+                                    sed ut repellat, doloremque eos. Doloribus tenetur dolores similique voluptatem corrupti.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem delectus. Iste, ab animi quo rerum sapiente adipisci, iure laborum ad, voluptas ipsam quisquam. A vero modi praesentium quos repellendus!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam esse tempora quam consequatur, provident cum modi dolores debitis, eaque hic exercitationem voluptas totam tempore deleniti porro mollitia ipsa dicta.
+                                </span>
+                            </p>
+                            <span id="after" style="position: relative; left: 85px;top: -30px;">
+                                <a id="textopreview" href="posts/2020-11-10-Post-Template.html" style="font-size: medium;text-decoration: none;"></a>
+                                <img src="" id="imagempreview" style="position: inherit;left: 70px;top: -10px;">
+                            </span>
+                        </div>
+                        <script>
+                            textopreview = document.querySelector('#textopreview');
+                            titulo = document.querySelector('#titulo');
+                            data = document.querySelector('#data');
+                            texto100 = document.querySelector('#texto100');
+                            texto50 = document.querySelector('#texto50');
+                            texto10 = document.querySelector('#texto10');
+                            imagempreview = document.querySelector('#imagempreview');
+                            function popUp(){
+                                titulo.innerHTML = '';
+                                data.innerHTML = '';
+                                texto100.innerHTML = '';
+                                texto50.innerHTML = '';
+                                texto10.innerHTML = '';
+                                textopreview.innerHTML = 'Check out the most recent post!';
+                                imagempreview.src = "assets/blog.gif"
+                            }
+                            function popUpReset(){
+                                titulo.innerHTML = 'Post Template';
+                                data.innerHTML = '10 Nov, 2020';
+                                texto100.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iusto quae.';
+                                texto50.innerHTML = 'Quos consequatur laboriosam ratione amet reprehenderit sint eveniet,';
+                                texto10.innerHTML = 'sed ut repellat, doloremque eos. Doloribus tenetur dolores similique voluptatem corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem delectus. Iste, ab animi quo rerum sapiente adipisci, iure laborum ad, voluptas ipsam quisquam. A vero modi praesentium quos repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam esse tempora quam consequatur, provident cum modi dolores debitis, eaque hic exercitationem voluptas totam tempore deleniti porro mollitia ipsa dicta.';
+                                textopreview.innerHTML = '';
+                                imagempreview.src = "assets/blank.png"
+                            }
+                            insert();
+                        </script>   
+                        <div id="recentpostlistdiv"></div>
+                    </div>
+                    <div class="box15">
+                        <iframe id="chattable" src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="none"></iframe>
+                        <script>window.onload = function(){
+                            document.getElementById('chattable').contentWindow.postMessage(`
+                            #top_banner{
+                                background-color: #9ac6ffff; 
+                            }
+                            .msgWrapper {
+                                background-color: #cce2ff;
+                                border-radius: 20px 20px 20px 0px;
+                                box-shadow: #66a8ff9f 2px 2px 3px;
+                                color: #000b1a;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                font-size: small;
+                            }
+                            .senderInfo {
+                                font-weight: bold;
+                            }
+                            #input:empty::before{
+                                font-size: small;
+                            }
+                        `, '*')
+                        }</script>
+                    </div>
+                    <div class="box16">
+                        <span class="marquee">
+                            <span>Currently working on: Building CSS, Details and elements, Pages Layouts, Content and Graphics</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 6 -->
+            <div class="row row6"></div>
+        </div>
+        <script src="flickity.pkgd.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>

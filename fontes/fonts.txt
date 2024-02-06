@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://use.typekit.net/hzc2mzc.css">
+font-family: "postino-std", serif;
+font-weight: 400;
+font-style: normal/italic;
+
+font-family: "sarina", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "pacifico", sans-serif;
+font-weight: 400/700;
+font-style: normal;
+
+font-family: "nunito", sans-serif;
+font-weight: 400/700;
+font-style: normal/italic;
+
+font-family: "strumpf-std-contour/open", sans-serif;
+font-weight: 400;
+font-style: normal;

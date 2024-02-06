@@ -1,0 +1,59 @@
+o que o site vai ter
+- galeria de fotos
+- sobre mim
+- mini blog
+- guestbook
+- site stats
+- my card
+
+LINHA 1 
+HEADER -> LINKS DE NAVEGAÇÃO
+
+LINHA 2 
+RETANGULO AMARELO -> N DE VISITANTES, MOOD DO DIA, SELECIONAR IDIOMA
+RETANGULO ROSA -> HEADERZIN FOFO
+RETANGULO ROXO -> FOTO DO DIA
+
+LINHA 3
+RETANGULO ROXO -> UMA FOTO E SOBRE MIM BREVE
+
+LINHA 4 
+RETANGULO ROSA -> CONTEUDO, BLOG
+
+LINHA 5
+QUADRADO AZUL - GUESTBOOK
+RETANGULO ROSA - CURRENTLY WORKING ON
+RETANGULO AMARELO - HEADER
+
+LINHA 6 
+RETANGULO ROSA -> SELOS Y2K, MADE BY, DATA, LOGO SIMPLIFICADA
+
+paleta de cores
+rosa #ff698fff
+amarelo #fff569ff
+azul #9ac6ffff
+lilás #c194ffff
+preto #140200ff
+branco #f8f8f8ff
+
+The tradegy of life is not in the fact of death, but in what dies inside of you while you live...
+
+To many folks go through life running from something that isn't after them....
+
+<iframe src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="0"></iframe>
+                        <script>iframe.contentWindow.postMessage(`
+                            .allMessages{
+                                background-color: #;
+                            }
+                            .msgWrapper{}
+                            .sent{}
+                            .senderInfo{}
+                            .msgBody{}
+                            .received{}
+                            #background{}
+                            #input{}
+                            #settings{}
+                            .mod{}
+                            .owner{}
+                            #timestamp{}
+                          `, "*")</script>

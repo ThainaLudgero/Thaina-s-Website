@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaina's blog!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: none;">
+    <div class="container">
+        <div class="row row1">
+            <div class="box box-row1">
+                <div class="box1">
+                    <div class="logo">
+                        <a href="index.html"><img src="titulo.png" alt="titulo"></a>
+                    </div>
+                    <div class="links">
+                        <a href="#">About me page</a>
+                        <a href="#">My Guestbook!</a>
+                        <a href="blog.html">Personal Blog</a>
+                        <a href="#">Photo Gallery</a>
+                        <a href="#">Museum/Shrine</a>
+                        <a href="#">Credits here!</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="row row02">
+            <div class="box box-row02">
+                <div class="box02">
+                    <div id="topo">
+                        <img src="gifs/girltextballon.gif" alt="girltextballon" height="80px" width="60px">
+                        <h1 id="wobble">Welcome to my blog!</h1>
+                        <script type="text/javascript">
+                            // <![CDATA[
+                            var speed=100; // speed of wobbling, lower is faster
+                            var height=3; // height of wobbling in pixels
+                            var alink=""; // page to link text to (set to ="" for no link)
+                            
+                            /****************************
+                            *    Wobbly Text Effect     *
+                            *(c) 2003-6 mf2fm web-design*
+                            *  http://www.mf2fm.com/rv  *
+                            * DON'T EDIT BELOW THIS BOX *
+                            ****************************/
+                            var wobtxt, wobble, wobcnt=0;
+                            window.onload=function() { if (document.getElementById) {
+                              var i, wobli;
+                              wobble=document.getElementById("wobble");
+                              wobtxt=wobble.firstChild.nodeValue;
+                              while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+                              for (i=0; i<wobtxt.length; i++) {
+                                wobli=document.createElement("span");
+                                wobli.setAttribute("id", "wobb"+i);
+                                wobli.style.position="relative";
+                                wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+                                if (alink) {
+                                  wobli.style.cursor="pointer";
+                                  wobli.onclick=function() { top.location.href=alink; }
+                                }
+                                wobble.appendChild(wobli);
+                              }
+                              setInterval("wobbler()", speed);
+                            }}
+                            
+                            function wobbler() {
+                              for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+                              wobcnt++;
+                            }
+                            // ]]>
+                        </script>
+                    </div>
+                    <!-- END OF TOPO -->
+                    <div id="aboutblog">
+                        <img src="divider/chibigirl4.gif" style="float: left;height: 80px;width: 80px;padding: 5px;" alt=" chibi girl with notebook">
+                        <div id="pwrap" style="padding: 20px; text-indent: 0.5em;">
+                            <p>Hello there! You are now on my personal blog page!
+                                This part of my website is for posting my opinions, experiences and a variety of subjects that i enjoy.</p>
+                        </div>
+                        <img src="divider/girl11.gif" style="float: right;height: 80px;width: 80px;padding: 5px;" alt="girl with notebook">
+                        <div id="pwrap" style="padding: 20px; text-indent: 0.5em;">
+                            <p>Before anything else, i just want to assure that english is my second language, which i'm continually learning. So please be mindful of the possibility of grammar and comprehension mistakes in my posts. &#129322
+                                And being honest, i think this will be filled mostly with posts of silly things and random thoughts :''D</p>
+                        </div>
+                    </div>
+                    <!-- END OF ABOUTBLOG -->
+                    <img src="gifs/pinkbow2.gif" alt="pinkbow" height="30px" width="40px">
+                    <div id="recentposts" style="text-align: left;padding-bottom: 50px;">
+                        <h1 style="text-align: center;">Recent Posts</h1>
+                        <a href="posts/2020-11-10-Post-Template.html">
+                            <div id="txtwrap" style="padding: 20px;">
+                                <h4 id="titulo">10 Nov, 2020 - Post Template</h4>
+                                <p style="text-align: justify;color: #fff569ff; text-indent: 0.5em;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iusto quae.(...)</span>
+                                </p>
+                            </div>
+                        </a>
+                        <hr style="background-color:#FFFF00;">
+                    </div>
+                    <!-- END OF RECENTPOSTS -->
+                    <img src="gifs/pinkbow2.gif" alt="pinkbow" height="30px" width="40px">
+                    <div id="otherposts">                    
+                        <div id="recentpostlistdiv"></div>
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+                <!-- END OF BOX 02 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
