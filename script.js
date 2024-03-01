@@ -226,4 +226,4 @@ if (document.getElementById("footer")) {
 //The <title> tag content is what shows up on browser tabs
 if (document.title === "Blog Post") {
   document.title = currentPostTitle;
-}Pggg
+}

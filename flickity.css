@@ -12,6 +12,7 @@ https://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .flickity-slider {
@@ -52,7 +53,7 @@ https://flickity.metafizzy.co
 
 .flickity-button:hover {
   background: #c194ffff;
-  cursor: pointer;
+  cursor: url(assets/pointer.png),pointer;
 }
 
 .flickity-button:focus {

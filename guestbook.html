@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Thaina's Guestbook!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('fundogb.png');">
+    <div class="container">
+        <div class="row row1">
+            <div class="box box-row1">
+                <div class="box1">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/titulo.png" alt="titulo" height="120px" width="240px"></a>
+                    </div>
+                    <div class="links">
+                        <a href="aboutme.html">About me page</a>
+                        <a href="guestbook.html">My Guestbook!</a>
+                        <a href="blog.html">Personal Blog</a>
+                        <a href="gallery.html">Photo Gallery</a>
+                        <a href="shrine.html">Shrines</a>
+                        <a href="husbando.html">Husbando test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="row row-gb">
+            <div class="box box-row-gb">
+                <div class="box-gb">
+                    <div id="top-guestbook">
+                        <iframe id="chattable" src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="none"></iframe>
+                        <script>window.onload = function(){
+                            document.getElementById('chattable').contentWindow.postMessage(`
+                            #top_banner{
+                                background-color: #9ac6ffff; 
+                            }
+                            .msgWrapper {
+                                background-color: #cce2ff;
+                                border-radius: 20px 20px 20px 0px;
+                                box-shadow: #66a8ff9f 2px 2px 3px;
+                                color: #000b1a;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                font-size: small;
+                            }
+                            .senderInfo {
+                                font-weight: bold;
+                            }
+                            #input:empty::before{
+                                font-size: small;
+                            }
+                            `, '*')
+                            }
+                        </script>
+                        <div id="text-wrap" style="text-align: right;position: relative;top: 130px;left: 20px;width: 300px;">
+                            <p>Your comment is greatly appreciated!</p>
+                            <p>Feel free to share your opinion about my website, let me know which feature you liked the most, or simply leave a note!</p>
+                            <p>Be my guest!</p>
+                            <img style="position: inherit;top: -30px;left: 5px;cursor: url(assets/default.png), default;" src="gifs/gift.gif" alt="gift">
+                        </div>
+                    </div>
+                        <span class="marquee" style="border-radius: 0px 0px 0px 8px;">
+                            <span><img src="blinkies/animegirl3.gif" alt="sailormoon"></span>
+                            <span><img src="blinkies/beautifulday.gif" alt="beautifulday"></span>
+                            <span><img src="blinkies/chinese2.gif" alt="kawaii"></span>
+                            <span><img src="blinkies/chinese3.gif" alt="kawaii"></span>
+                            <span><img src="blinkies/chinese4.gif" alt="kawaii"></span>
+                            <span><img src="blinkies/chinese9.jpg" alt="kawaii"></span>
+                            <span><img src="blinkies/hellokitty2.gif" alt="hellokitty"></span>
+                            <span><img src="blinkies/hellokitty5.gif" alt="hellokitty"></span>
+                            <span><img src="blinkies/milky.gif" alt="milky"></span>
+                            <span><img src="blinkies/strawberry.gif" alt="strawberry"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

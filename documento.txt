@@ -39,21 +39,3 @@ branco #f8f8f8ff
 The tradegy of life is not in the fact of death, but in what dies inside of you while you live...
 
 To many folks go through life running from something that isn't after them....
-
-<iframe src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="0"></iframe>
-                        <script>iframe.contentWindow.postMessage(`
-                            .allMessages{
-                                background-color: #;
-                            }
-                            .msgWrapper{}
-                            .sent{}
-                            .senderInfo{}
-                            .msgBody{}
-                            .received{}
-                            #background{}
-                            #input{}
-                            #settings{}
-                            .mod{}
-                            .owner{}
-                            #timestamp{}
-                          `, "*")</script>

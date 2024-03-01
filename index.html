@@ -3,9 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
         <title>Thaina's website!!</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="flickity.css" media="screen">
+        <script type="text/javascript" src="crawler.js">
+
+            /* Text and/or Image Crawler Script v1.53 (c)2009-2011 John Davenport Scheuer
+               as first seen in http://www.dynamicdrive.com/forums/
+               username: jscheuer1 - This Notice Must Remain for Legal Use
+            */
+            
+        </script>
     </head>
     <body>
         <div class="container">
@@ -13,15 +22,15 @@
                 <div class="box box-row1">
                     <div class="box1">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/titulo.png" alt="titulo"></a>
+                            <a href="index.html"><img src="assets/titulo.png" alt="titulo" height="120px" width="240px"></a>
                         </div>
                         <div class="links">
-                            <a href="#">About me page</a>
-                            <a href="#">My Guestbook!</a>
+                            <a href="aboutme.html">About me page</a>
+                            <a href="guestbook.html">My Guestbook!</a>
                             <a href="blog.html">Personal Blog</a>
-                            <a href="#">Photo Gallery</a>
-                            <a href="#">Museum/Shrine</a>
-                            <a href="#">Credits here!</a> 
+                            <a href="gallery.html">Photo Gallery</a>
+                            <a href="shrine.html">Shrines</a>
+                            <a href="husbando.html">Husbando test</a>
                         </div>
                     </div>
                 </div>
@@ -54,10 +63,10 @@
                         xhttp.send();
                     </script>
                     <div class="box4">
-                        <img src="blinkies/shoujo1.png" alt="anime girl">
+                        <img src="blinkies/thainablinkie2.gif" height="84px" alt="hellokitty">
                     </div>
                     <div class="box5">
-                        <img src="blinkies/shoujo2.png" alt="">
+                        <img src="blinkies/thainablinkie.gif" height="84px" alt="strawberry">
                     </div>
                 </div>
             </div>
@@ -65,20 +74,23 @@
             <div class="row row3">
                 <div class="box box-row3">
                     <div class="box6">
-                        <img src="assets/imagem1.jpg" style="float: left;height: 150px;width: 150px;padding: 20px;" alt="tomoko kawase">
-                        <div id="pwrap" style="padding-top: 20px;text-indent: 0.5em;">
-                            <p><span class="decoração" style="color: #c194ffff;">Olá querido internauta, Bem-vindo ao meu website!</span></p>
-                            <p>Meu nome é Thainá e sou só mais uma moça latina americana surfando pela web XD</p>
-                            <p>Sou Brasileira - mas não sei jogar futebol, aviso já de antemão - e mais uma boba romântica apaixonada por livros, música, design e anime.</p>
-                            <p>Sou cristã e assim como qualquer um - Eu espero (emoji) - e à todos, eu dou meu <span class="decoração"  style="color: #c194ffff;">respeito!</span></p>
-                            <p>O propósito deste site é resgatar as memórias nostálgicas da antiga web e claro, treinar minhas habilidades em desenvolvimento web (emoji).</p>
-                            <p><span class="decoração" style="color: #c194ffff;">Espero que tenha gostado! Até mais!</span></p>
+                        <div id="videoframe" style="display: flex;align-items: center;">
+                            <iframe id="iframe" width="250px" height="200px" src="https://www.youtube.com/embed/videoseries?si=_-fW_Hnvn23jKP7u&amp;controls=0&amp;list=PLYJWm1b_bPw7wGxqpr5_-5_3SYW0yhDqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div id="button-wrap">
+                                <button type="button" onclick="play1()"><i class="fa-regular fa-circle-play"></i> SNSD</button>
+                                <button type="button"><i class="fa-regular fa-circle-play"></i> name</button>
+                                <button type="button"><i class="fa-regular fa-circle-play"></i> name</button>
+                            </div>
                         </div>
-                        <div id="imgwrap" style="text-align: center;">
-                            <img src="blinkies/chinese7.gif" alt="button">
-                            <img src="blinkies/chinese8.gif" alt="button">
-                            <img src="blinkies/chinese9.jpg" alt="button">
-                        </div>
+                        <script>
+                            iframe = document.querySelector("#iframe");
+                            function play1(){
+                                iframe.src = "https://www.youtube.com/embed/videoseries?si=_-fW_Hnvn23jKP7u&amp;controls=0&amp;list=PLYJWm1b_bPw7wGxqpr5_-5_3SYW0yhDqc";
+                            }
+                        </script>
+                        <img src="blinkies/ipp.jpg" alt="">
+                        <img src="blinkies/ipp2.jpg" alt="">
+                        <img src="blinkies/ipp3.jpg" height="48px" alt="">
                     </div>
                     <div class="box7">
                         <img src="blinkies/happyday.gif" alt="">
@@ -95,20 +107,36 @@
             <!-- ROW 4 -->
             <div class="row row4">
                 <div class="box box-row4">
+                    <img style="position: absolute;left: 323px;top: 525px;" src="gifs/chibigirl47.gif" alt="chibigirl">
                     <div class="box10">
-                        <a href="https://tamanotchi.world/10060c"><img src="https://tamanotchi.world/i2/10060" alt="It's tamaNOTchi! Click to feed!"></a>
+                        <iframe src="https://calendar.sakura.ne.jp/blog_cal.html" frameborder="0"></iframe>
+                        <div id="tamanotchi" style="display: flex;">
+                            <a href="https://tamanotchi.world/10060c"><img src="https://tamanotchi.world/i2/10060" alt="It's tamaNOTchi! Click to feed!"></a>
+                            <h1>Click to feed me!</h1>
+                        </div>
+                        <div id="textwrap">
+                            <h1 style="color: #fff569;">Hey there!</h1>
+                            <p>
+                               <span style="color: #ff698f;">You're currently checking out the cutest mess, which i like to call "my website"</span>
+                               I've thrown in some fun tools for your entertainment but remember, it's a work in progress!
+                               What do yout think?<span style="color: #fff569;"> Perhaps tell me in my guestbook!</span> Catch you later!
+                            </p>
+                        </div>
+                        <img src="gifs/cat14.gif" style="position: absolute;left: 650px;top: 640px;" alt="cat">
                     </div>
                     <div class="box11">
-                        <img src="blinkies/butterflies.gif" alt="">
+                        <img src="blinkies/hellokitty15.gif" alt="">
                     </div>
                     <div class="box12">
                         <img src="blinkies/animegirl2.gif" alt="">
                     </div>
                     <div class="box13">
                         <div class="main-carousel popup" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": ">1", "freeScroll": "true", "wrapAround": "true"}'>
-                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
-                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
-                            <div class="carousel-cell"><a href="gallery.html"><img src="assets/choso purple.jpg" alt="choso"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html#best"><img src="assets/gallerybest.jpg" alt="bear"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html#anime"><img src="assets/galleryanime.jpg" alt="onepiece"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html#icons"><img src="assets/galleryicon.jpg" alt="girl"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html#clothes"><img src="assets/galleryclothes.jpg" alt="clothes"></a></div>
+                            <div class="carousel-cell"><a href="gallery.html#gifs"><img src="assets/gallerygif.gif" alt="phone"></a></div>
                           </div>
                     </div>
                 </div>
@@ -117,13 +145,14 @@
             <div class="row row5">
                 <div class="box box-row5">
                     <div class="box14">
+                        <img src="gifs/chibigirl107.gif" style="position: absolute;top: 840px;left: 755px;transform: scaleX(-1);" alt="chibigirl">
                         <div id="topo">
-                            <a href="blog.html"><span><img src="assets/icon1.gif" alt=""></span><h1 style="color:#ff3281;">Blog!</h1></a>
+                            <a href="blog.html"><span><img src="assets/icon1.gif" style="padding-right: 10px;" alt="book"></span><h1 style="color:#ff3281;">Blog!</h1></a>
                             <p style="text-align: center;padding-bottom: 10px;">Here i talk about my interests and everything else that i would like to keep on my website!</p>
                         </div>
                         <div id="preview" onmouseover="popUp()" onmouseout="popUpReset()">
                             <h1 id="titulo" style="color:#ff3281;">Post Template</h1>
-                            <h4 id="data" style="color:#ff698fff;">10 Nov, 2020</h4>
+                            <h4 id="data" style="color:#ff3281;">10 Nov, 2020</h4>
                             <p style="text-align: justify;padding: 10px;">
                                 <span id="texto100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iusto quae.</span>
                                 <span id="texto50" style="color: rgba(248, 248, 248, 0.800);;">Quos consequatur laboriosam ratione amet reprehenderit sint eveniet,</span>
@@ -133,9 +162,9 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, magnam esse tempora quam consequatur, provident cum modi dolores debitis, eaque hic exercitationem voluptas totam tempore deleniti porro mollitia ipsa dicta.
                                 </span>
                             </p>
-                            <span id="after" style="position: relative; left: 85px;top: -30px;">
+                            <span id="after" style="display: grid;width: max-content;margin: 0px auto;position: relative;top: -20px;">
                                 <a id="textopreview" href="posts/2020-11-10-Post-Template.html" style="font-size: medium;text-decoration: none;"></a>
-                                <img src="" id="imagempreview" style="position: inherit;left: 70px;top: -10px;">
+                                <img src="" id="imagempreview" style="margin: 0px auto;">
                             </span>
                         </div>
                         <script>
@@ -166,9 +195,11 @@
                             }
                             insert();
                         </script>   
-                        <div id="recentpostlistdiv"></div>
+                        <div id="recentpostlistdiv" sty></div>
+                        <img style="position: absolute;top: 167%;left: 57%; z-index: 1;cursor: url(assets/default.png), default;" src="gifs/heart.gif" alt="heart">
                     </div>
                     <div class="box15">
+                        <img style="position: absolute;top: 157%;left: 72%;transform: rotate(13deg);cursor: url(assets/default.png), default;" src="gifs/robot.gif" alt="robot">
                         <iframe id="chattable" src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="none"></iframe>
                         <script>window.onload = function(){
                             document.getElementById('chattable').contentWindow.postMessage(`
@@ -193,15 +224,33 @@
                         }</script>
                     </div>
                     <div class="box16">
-                        <span class="marquee">
-                            <span>Currently working on: Building CSS, Details and elements, Pages Layouts, Content and Graphics</span>
-                        </span>
+                        <div class="marquee" style="padding-top: 5px;width: 100%;" id="mycrawler">
+                           <img src="blinkies/tamanotchi.gif" alt="tamanotchi">
+                           <img src="blinkies/gifshop.png" alt="99giftshop">
+                        </div>
+                        <script type="text/javascript">
+                            marqueeInit({
+                                uniqueid: 'mycrawler',
+                                style: {
+                                    'padding': '5px'
+                                },
+                                inc: 5, //speed - pixel increment for each iteration of this marquee's movement
+                                mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+                                moveatleast: 2,
+                                neutral: 150,
+                                persist: true,
+                                savedirection: true
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
+            <div class="box17" style="display: inherit;justify-content: center;padding: 10px 0px 0px 30px;">
+                <a href="husbando.html"><img src="blinkies/thainablinkie4.gif" alt="adbanner"></a>
             <!-- ROW 6 -->
             <div class="row row6"></div>
         </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="flickity.pkgd.js"></script>
         <script src="script.js"></script>
     </body>
