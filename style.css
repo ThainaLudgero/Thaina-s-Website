@@ -29,9 +29,8 @@
     scrollbar-width: thin;
 }
 body{
-    background-image: url('assets/fundoindex.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('https://dl.glitter-graphics.com/pub/1309/1309647bo3cj4kxyx.png ');
+    background-repeat: repeat;
     cursor: url(assets/default.png),auto;
     /**background-attachment: local;**/
 }
@@ -54,6 +53,8 @@ a, button, img{
 /* ROW 1 */
 .row1{
     height: 122px;
+    background-color: rgb(232,42,113);
+    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box1{
     display: flex;
@@ -127,6 +128,9 @@ a, button, img{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 33px;
+    background: rgb(166,34,226);
+    background: linear-gradient(360deg, rgba(166,34,226,1) 0%, rgba(187,138,255,1) 44%, rgba(237,223,255,1) 100%);
 }
 .box4 img{
     width: inherit;
@@ -135,9 +139,6 @@ a, button, img{
 .box5 img{
     width: inherit;
     /*height: inherit;*/
-}
-.box2, .box3{
-    height: 33px;
 }
 .box2, .box4{
     width: 318px;
@@ -150,7 +151,7 @@ a, button, img{
 }
 /* ROW 3 */
 .row3{
-    height: 267px;
+    height: 270px;
 }
 .box-row3{
     column-gap: 10px;
@@ -211,20 +212,21 @@ a, button, img{
 
 /* ROW 4 */
 .row4{
-    height: 293px;
+    height: 295px;
 }
 .box-row4{
     grid-template-areas:
     'box10 box10 box10 box12 box12 box12'
     'box11 box11 box11 box13 box13 box13';
-    column-gap: 10px;
+    column-gap: 9px;
     row-gap: 12px;
 }
 .box10{
     display: grid;
     grid-area: box10;
-    width: 440px;
-    height: 220px;
+    height: 218px;
+    background: rgb(28,107,230);
+    background: linear-gradient(360deg, rgba(28,107,230,1) 0%, rgba(130,184,255,1) 44%, rgba(199,223,255,1) 100%);
 }
 .box10 iframe{
     grid-column-start: 1;
@@ -279,17 +281,19 @@ a, button, img{
 }
 
 /* ROW 5 */
+
 .box-row5{
     grid-template-areas: 
     'box14 box14 box14 box15 box15 box15'
     'box14 box14 box14 box16 box16 box16';
-    column-gap: 14px;
+    column-gap: 12px;
     row-gap: 7px;
 }
 .box14{
     grid-area: box14;
-    width: 440px;
-    justify-content: center;
+    height: 336px;
+    background-color: rgb(232,42,113);
+    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box14 a[href="blog.html"]{
     display: flex;
@@ -327,7 +331,10 @@ a, button, img{
 .box15{
     grid-area: box15;
     width: 196px;
-    height: 274px;
+    height: 268px;
+    border-radius: 16px;
+    background-color: rgb(232,42,113);
+    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box15 iframe{
     width: 100%;
@@ -336,7 +343,8 @@ a, button, img{
 }
 .box16{
     grid-area: box16;
-    height: 60px;
+    background-color: rgb(232,42,113);
+    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .marquee {
     width: inherit;
