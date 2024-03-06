@@ -18,27 +18,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="left">
-                <button type="button" onclick="rosa1()">rosa1</button>
-                <button type="button" onclick="rosa2()">rosa2</button>
-                <button type="button" onclick="azul()">azul</button>
-                <button type="button" onclick="tijolinhos()">tijolinhos</button>
-            </div>
-            <script>
-                function rosa1(){
-                    document.body.style.backgroundImage = "url('https://dl.glitter-graphics.com/pub/1309/1309647bo3cj4kxyx.png')"; 
-                }
-                function rosa2(){
-                    document.body.style.backgroundImage = "url('https://dl.glitter-graphics.com/pub/3309/3309124cz0k7czdl7.gif')"; 
-                }
-                function azul(){
-                    document.body.style.backgroundImage = "url('https://dl.glitter-graphics.com/pub/1997/1997583dm5ylllxuy.gif')"; 
-                }
-                function tijolinhos(){
-                    document.body.style.backgroundImage = "url('https://dl.glitter-graphics.com/pub/676/676657yhxq5o5bjd.gif')"; 
-                }
-            </script>
-            <div class="row row1">
+            <div class="row row1 background">
                 <div class="box box-row1">
                     <div class="box1">
                         <div class="logo">
@@ -59,29 +39,15 @@
             <div class="row row2">
                 <div class="box box-row2">
                     <div class="box2">
-                        <p>Thaina is <span style="color: #c194ffff;">feeling</span>:&nbsp;</p>
+                        <p>Thaina is <span style="color: #ff3281;">feeling</span>:&nbsp;</p>
                         <a href="https://www.imood.com/users/thaml"><img src="https://moods.imood.com/display/uname-thaml/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of thaina at www.imood.com" border="0"></a>
                     </div>
                     <div class="box3">
-                        <p>You are <span style="color: #c194ffff;">visitor</span> #<span id="hitcount"></span></p>
+                        <p>You are <span style="color: #ff3281;padding-right: 5px;">visitor</span></p>
+                        <!-- Começa aqui -->
+                        <script language="javascript" type="text/javascript" src="https://counter1.fc2.com/counter.php?id=39537292&main=1"></script><noscript><img src="https://counter1.fc2.com/counter_img.php?id=39537292&main=1" /></noscript>
+                        <!-- Termina aqui -->
                     </div>
-                    <script>
-                        var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function() {
-                            if (this.readyState == 4 && this.status == 200) {
-                            var site_data = JSON.parse(this.responseText);
-                            var num_arr = site_data.info.views.toString().split("");
-                            var num_str = "";
-                            for (i = 0; i < num_arr.length; i++) {
-                                num_str += num_arr[i];
-                                if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
-                            }
-                            document.getElementById("hitcount").innerHTML = num_str;
-                            }
-                        };
-                        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=thainaswebsite", true);
-                        xhttp.send();
-                    </script>
                     <div class="box4">
                         <img src="blinkies/thainablinkie2.gif" height="84px" alt="hellokitty">
                     </div>
@@ -98,14 +64,20 @@
                             <iframe id="iframe" width="250px" height="200px" src="https://www.youtube.com/embed/videoseries?si=_-fW_Hnvn23jKP7u&amp;controls=0&amp;list=PLYJWm1b_bPw7wGxqpr5_-5_3SYW0yhDqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <div id="button-wrap">
                                 <button type="button" onclick="play1()"><i class="fa-regular fa-circle-play"></i> SNSD</button>
-                                <button type="button"><i class="fa-regular fa-circle-play"></i> name</button>
-                                <button type="button"><i class="fa-regular fa-circle-play"></i> name</button>
+                                <button type="button" onclick="play2()"><i class="fa-regular fa-circle-play"></i> genz</button>
+                                <button type="button" onclick="play3()"><i class="fa-regular fa-circle-play"></i> edits</button>
                             </div>
                         </div>
                         <script>
                             iframe = document.querySelector("#iframe");
                             function play1(){
                                 iframe.src = "https://www.youtube.com/embed/videoseries?si=_-fW_Hnvn23jKP7u&amp;controls=0&amp;list=PLYJWm1b_bPw7wGxqpr5_-5_3SYW0yhDqc";
+                            }
+                            function play2(){
+                                iframe.src = "https://www.youtube.com/embed/videoseries?si=RRmxOaeT_PChzEUW&amp;controls=0&amp;list=PLYJWm1b_bPw7twP3MAWRFfBIlNK1MwdxZ";
+                            }
+                            function play3(){
+                                iframe.src = "https://www.youtube.com/embed/videoseries?si=cBdtM4uteRNAqDu-&amp;controls=0&amp;list=PLYJWm1b_bPw5XIs50ycE_V08CUK6JXGwn";
                             }
                         </script>
                         <img src="blinkies/ipp.jpg" alt="">
@@ -164,7 +136,7 @@
             <!-- ROW 5 -->
             <div class="row row5">
                 <div class="box box-row5">
-                    <div class="box14">
+                    <div class="box14 background">
                         <img src="gifs/chibigirl107.gif" style="position: absolute;top: 840px;left: 755px;transform: scaleX(-1);" alt="chibigirl">
                         <div id="topo">
                             <a href="blog.html"><span><img src="assets/icon1.gif" style="padding-right: 10px;" alt="book"></span><h1 style="color:#ff3281;">Blog!</h1></a>
@@ -218,7 +190,7 @@
                         <div id="recentpostlistdiv" sty></div>
                         <img style="position: absolute;top: 167%;left: 57%; z-index: 1;cursor: url(assets/default.png), default;" src="gifs/heart.gif" alt="heart">
                     </div>
-                    <div class="box15">
+                    <div class="box15 background">
                         <img style="position: absolute;top: 157%;left: 72%;transform: rotate(13deg);cursor: url(assets/default.png), default;" src="gifs/robot.gif" alt="robot">
                         <iframe id="chattable" src="https://chattable.neocities.org/embed/?chat=69362121" frameborder="none"></iframe>
                         <script>window.onload = function(){
@@ -243,10 +215,11 @@
                         `, '*')
                         }</script>
                     </div>
-                    <div class="box16">
+                    <div class="box16 background">
                         <div class="marquee" style="padding-top: 5px;width: 100%;" id="mycrawler">
-                           <img src="blinkies/tamanotchi.gif" alt="tamanotchi">
+                           <img style="padding-left: 17px;" src="blinkies/tamanotchi.gif" alt="tamanotchi">
                            <img src="blinkies/gifshop.png" alt="99giftshop">
+                           <a href="http://king-lulu-deer.deviantart.com/"><img height="31px" src="blinkies/kingluludeer.jpg" alt="king-lulu-deer"></a>
                         </div>
                         <script type="text/javascript">
                             marqueeInit({

@@ -29,8 +29,9 @@
     scrollbar-width: thin;
 }
 body{
-    background-image: url('https://dl.glitter-graphics.com/pub/1309/1309647bo3cj4kxyx.png ');
-    background-repeat: repeat;
+    background-image: url('assets/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: url(assets/default.png),auto;
     /**background-attachment: local;**/
 }
@@ -53,8 +54,6 @@ a, button, img{
 /* ROW 1 */
 .row1{
     height: 122px;
-    background-color: rgb(232,42,113);
-    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box1{
     display: flex;
@@ -97,6 +96,10 @@ a, button, img{
     50%{ color: var(--lilac);}
     75%{ color: var(--blue);}
     100%{ color: var(--yellow);}
+}
+.background{
+    background-color: rgb(232,42,113);
+    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 
 /* ROW 2 */
@@ -292,8 +295,6 @@ a, button, img{
 .box14{
     grid-area: box14;
     height: 336px;
-    background-color: rgb(232,42,113);
-    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box14 a[href="blog.html"]{
     display: flex;
@@ -333,8 +334,6 @@ a, button, img{
     width: 196px;
     height: 268px;
     border-radius: 16px;
-    background-color: rgb(232,42,113);
-    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .box15 iframe{
     width: 100%;
@@ -343,8 +342,6 @@ a, button, img{
 }
 .box16{
     grid-area: box16;
-    background-color: rgb(232,42,113);
-    background: linear-gradient(360deg, rgba(232,42,113,1) 0%, rgba(255,105,143,1) 44%, rgba(255,171,192,1) 100%);
 }
 .marquee {
     width: inherit;
@@ -355,44 +352,9 @@ a, button, img{
     display: inline-flex; 
     border-radius: 5px;
 }
-.marquee span {
-    display: flex;        
-    animation: marquee;
-    animation: marquee 15s linear infinite;
-    animation-play-state: running;        
-}
-.marquee span img{
-    height: 40px;
-    width: 100px;
-    padding-right: 5px;
-}
-.marquee:hover> span {
-    animation-play-state: paused;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate(0%, 0);
-    }  
-    /*  
-    50% {
-        transform: translate(-100%, 0);
-    }
-    50.001% {
-        transform: translate(100%, 0);
-    }*/
-    100% {
-        transform: translate(-1000%, 0);
-    }
-}
-@keyframes marquee-reset {
-    0% {
-        transform: translate(0%, 0);
-    }  
-
-}
 
 /* ABOUT ME PAGE */
+
 
 .box-row-about{
     display: flex;
@@ -474,16 +436,20 @@ a, button, img{
 .box-gb{
     width: inherit;
 }
-#top-guestbook{
+.top-guestbook{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-#top-guestbook iframe{
+.top-guestbook iframe{
     width: 220px;
     height: 300px;
     margin-top: 20px;
     border-radius: 15px;
+}
+.top-guestbook img[src="assets/leaveacomment.png"]:hover{
+    transform: rotate(2deg);
+    transition: ease-in 2s;
 }
 
 /* BLOG PAGE */
@@ -533,7 +499,7 @@ a, button, img{
     grid-template-columns: auto;
     overflow: hidden;
     scrollbar-gutter: stable both-edges;
-    border-radius: 35px;
+    text-align: center;
 }
 .box-row-gallery:hover{
     overflow-y: scroll;
@@ -543,15 +509,15 @@ a, button, img{
     justify-items: center;
     width: 90%;
     padding: 20px;
-    text-align: center;
 }
 .box1-gallery p{ 
-    padding-bottom: 15px;
+    padding: 15px 0px;
 }
 .collection-wrap{ 
     width: 90%;
     margin: 0px auto;
     padding-bottom: 20px;
+    text-align: left;
 }
 .collection-wrap h2{
     padding-bottom: 5px;
@@ -595,7 +561,6 @@ a, button, img{
     grid-row-end: 2;
     position: relative;
     top: -215px;
-    background-color: #fb00ff85;
 }
 .main{
     grid-column-start: 2;
